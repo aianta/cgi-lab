@@ -50,6 +50,8 @@ def login_page():
 
 
 def secret_page(username=None, password=None):
+    username = username if username is not None else "<missing username>"
+    password = password if password is not None else "<missing password>"
     """
     Returns the HTML for the page visited after the user has logged-in.
     """
